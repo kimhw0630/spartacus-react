@@ -1,0 +1,14 @@
+.cx-carousel-product-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &-media {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    &-title {
+        font-weight: bold;
+    }
+}

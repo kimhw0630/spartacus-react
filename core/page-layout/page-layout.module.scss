@@ -1,0 +1,113 @@
+.page-layout {
+    &-header {
+        background-color: #212738;
+        color: white;
+
+        >* {
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 auto;
+            max-width: 1140px;
+        }
+    }
+}
+
+.page-slot {
+    &-PreHeader {
+        display: none;
+    }
+
+    &-SiteContext {
+        align-items: center;
+        display: inline-flex;
+        height: 48px;
+        flex-basis: 50%;
+    }
+
+    &-SiteLinks {
+        align-items: center;
+        display: inline-flex;
+        flex-basis: 50%;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        >* {
+            &:nth-of-type(n + 2) {
+                padding-left: 12px;
+            }
+        }
+    }
+
+    &-SiteLogo {
+        flex-basis: 90px;
+    }
+
+    &-SearchBox {
+        flex: 1;
+    }
+
+    &-SiteLogin {
+        flex: none;
+        padding: 8px 16px;
+    }
+
+    &-MiniCart {
+        flex: none;
+    }
+
+    &-NavigationBar {
+        flex-basis: 100%;
+    }
+
+    &-Section1 {
+        margin-top: 28px;
+    }
+
+    &-Section2A,
+    &-Section2B {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        span {
+            grid-column: 1 / 3;
+        }
+    }
+
+    &-Section4 {
+        display: flex;
+
+        >* {
+            flex: 1;
+        }
+    }
+
+    &-Footer {
+        background-color: rgb(33, 39, 56);
+    }
+}
+
+@media (min-width: 992px) {
+    .page-slot {
+
+        &-Section2A,
+        &-Section2B {
+            display: inline-grid;
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 579px) {
+    .page-slot {
+
+        &-Section2A,
+        &-Section2B {
+            grid-template-columns: 1fr;
+
+            span {
+                grid-column: 1;
+            }
+        }
+    }
+}

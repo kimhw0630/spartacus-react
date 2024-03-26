@@ -1,0 +1,47 @@
+.cx-category-navigation {
+    color: white;
+    display: flex;
+    flex-direction: row;
+
+    &-tab-container {
+        &:nth-of-type(n + 2) {
+            padding-left: 16px;
+        }
+    }
+
+    &-tab-container {
+        font-weight: bold;
+        padding: 18px 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    &-menu {
+        background-color: white;
+        bottom: 16px;
+        color: black;
+        display: grid;
+        gap: 18px;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 18px;
+        position: absolute;
+        transform: translateY(100%);
+        z-index: 20;
+
+        &-header {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        &-header,
+        &-item {
+            white-space: nowrap;
+        }
+
+        &-item {
+            font-weight: normal;
+            text-transform: none;
+        }
+    }
+}

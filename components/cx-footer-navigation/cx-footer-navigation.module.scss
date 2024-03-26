@@ -1,0 +1,23 @@
+.cx-footer-navigation {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-column {
+        display: flex;
+        flex-direction: column;
+        padding: 36px;
+
+        &-header {
+            font-weight: bold;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+        }
+
+        &-item {
+            font-size: 12px;
+            padding: 4px 0;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.cx-carousel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+
+    &-items {
+        display: flex;
+        flex-direction: row;
+        min-height: 250px;
+        overflow-x: hidden;
+        padding: 0 28px;
+
+        >* {
+            flex: 0 0 25%;
+        }
+    }
+
+    &-arrow {
+        border-radius: 50%;
+        color: #d3d6db;
+        font-size: 32px;
+        height: 32px;
+        line-height: 32px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 32px;
+
+        &[disabled] {
+            opacity: .5;
+        }
+
+        &-prev {
+            left: 0;
+        }
+
+        &-next {
+            right: 0;
+        }
+    }
+
+    &-header {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+}

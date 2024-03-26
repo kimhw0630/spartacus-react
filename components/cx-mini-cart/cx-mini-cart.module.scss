@@ -1,0 +1,15 @@
+.cx-mini-cart {
+    background-color: #fe5757;
+    color: white;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    min-width: 70px;
+    text-align: center;
+    vertical-align: middle;
+
+    &-count {
+        font-size: 19px;
+        font-weight: bold;
+    }
+}
